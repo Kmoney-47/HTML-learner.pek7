@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KMoney Enterprise</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#050816;
+color:white;
+overflow-x:hidden;
+}
+
+/* pages */
+.page{
+display:none;
+padding:20px 20px 140px;
+min-height:100vh;
+}
+
+.page.active{
+display:block;
+}
+
+/* hero */
+.hero{
+background:linear-gradient(135deg,#25104a,#0b1025);
+padding:28px;
+border-radius:28px;
+margin-bottom:24px;
+border:1px solid rgba(255,255,255,.08);
+}
+
+.hero h1{
+font-size:38px;
+margin-bottom:14px;
+}
+
+.hero p{
+opacity:.8;
+line-height:1.6;
+margin-bottom:22px;
+}
+
+/* button */
+.btn{
+background:#8b5cf6;
+padding:16px 22px;
+border:none;
+border-radius:18px;
+color:white;
+font-weight:bold;
+cursor:pointer;
+font-size:15px;
+}
+
+/* stats */
+.stats{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:16px;
+margin:24px 0;
+}
+
+.stat{
+background:#0b1025;
+padding:22px;
+border-radius:22px;
+border:1px solid rgba(255,255,255,.06);
+}
+
+.stat h3{
+font-size:14px;
+opacity:.7;
+margin-bottom:12px;
+}
+
+.stat strong{
+font-size:32px;
+color:#a78bfa;
+}
+
+/* cards */
+.grid{
+display:grid;
+gap:18px;
+}
+
+.card{
+background:#0b1025;
+padding:24px;
+border-radius:24px;
+border:1px solid rgba(255,255,255,.06);
+}
+
+.card h2{
+margin-bottom:12px;
+font-size:22px;
+}
+
+.card p{
+opacity:.75;
+line-height:1.6;
+}
+
+/* bottom nav */
+.bottom-nav{
+position:fixed;
+left:12px;
+right:12px;
+bottom:26px;
+background:#0b1025;
+border:1px solid rgba(255,255,255,.08);
+border-radius:28px;
+display:flex;
+justify-content:space-around;
+padding:18px 10px;
+backdrop-filter:blur(10px);
+z-index:999;
+}
+
+.nav-btn{
+font-size:13px;
+opacity:.75;
+text-align:center;
+cursor:pointer;
+transition:.3s;
+}
+
+.nav-btn.active{
+color:#a78bfa;
+opacity:1;
+}
+
+/* mobile */
+@media(max-width:700px){
+
+.hero h1{
+font-size:30px;
+}
+
+.stats{
+grid-template-columns:1fr;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<!-- HOME -->
+<section id="home" class="page active">
+
+<div class="hero">
+<h1>KMoney Enterprise 🚀</h1>
+
+<p>
+Professional website development and graphics design
+for businesses, creators, startups, and brands.
+</p>
+
+<button class="btn"
+onclick="showPage('portfolio')">
+View Portfolio
+</button>
+</div>
+
+<div class="stats">
+
+<div class="stat">
+<h3>WEBSITES BUILT</h3>
+<strong>120+</strong>
+</div>
+
+<div class="stat">
+<h3>GRAPHICS DESIGNED</h3>
+<strong>350+</strong>
+</div>
+
+<div class="stat">
+<h3>CLIENT PROJECTS</h3>
+<strong>48</strong>
+</div>
+
+<div class="stat">
+<h3>HAPPY CLIENTS</h3>
+<strong>96</strong>
+</div>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="page">
+
+<div class="hero">
+<h1>Our Services 💼</h1>
+
+<p>
+Professional digital solutions built for mobile and desktop users.
+</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h2>🌐 Website Development</h2>
+
+<p>
+Responsive business websites, landing pages,
+online stores, and custom web applications.
+</p>
+</div>
+
+<div class="card">
+<h2>🎨 Graphics Design</h2>
+
+<p>
+Flyers, posters, logos, social media graphics,
+branding kits, and promotional designs.
+</p>
+</div>
+
+<div class="card">
+<h2>📱 Mobile UI Design</h2>
+
+<p>
+Modern Android and iPhone inspired interfaces
+with smooth and clean user experience.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="page">
+
+<div class="hero">
+<h1>Our Portfolio 🖼️</h1>
+
+<p>
+A few creative projects completed for brands and businesses.
+</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h2>Business Website</h2>
+
+<p>
+Modern responsive company website designed
+for mobile and desktop users.
+</p>
+</div>
+
+<div class="card">
+<h2>Event Flyer Design</h2>
+
+<p>
+High quality promotional flyer graphics
+for concerts and social media campaigns.
+</p>
+</div>
+
+<div class="card">
+<h2>Brand Identity</h2>
+
+<p>
+Complete logo and branding package
+for startup businesses.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="page">
+
+<div class="hero">
+<h1>Contact Us 📞</h1>
+
+<p>
+Let's work together and bring your ideas to life.
+</p>
+</div>
+
+<div class="card">
+
+<h2>Reach Out</h2>
+
+<p>Email: kmoneyenterprise@example.com</p>
+<br>
+
+<p>Instagram: @kmoneyenterprise</p>
+<br>
+
+<p>WhatsApp: +000 000 0000</p>
+
+</div>
+
+</section>
+
+<!-- BOTTOM NAV -->
+<div class="bottom-nav">
+
+<div class="nav-btn active"
+onclick="showPage('home', this)">
+🏠<br>Home
+</div>
+
+<div class="nav-btn"
+onclick="showPage('services', this)">
+💼<br>Services
+</div>
+
+<div class="nav-btn"
+onclick="showPage('portfolio', this)">
+🖼️<br>Portfolio
+</div>
+
+<div class="nav-btn"
+onclick="showPage('contact', this)">
+📞<br>Contact
+</div>
+
+</div>
+
+<script>
+
+function showPage(pageId, el){
+
+// hide all pages
+document.querySelectorAll('.page').forEach(page=>{
+page.classList.remove('active');
+});
+
+// show selected page
+document.getElementById(pageId).classList.add('active');
+
+// remove active nav
+document.querySelectorAll('.nav-btn').forEach(btn=>{
+btn.classList.remove('active');
+});
+
+// activate nav
+if(el){
+el.classList.add('active');
+}
+
+// scroll top
+window.scrollTo(0,0);
+
+}
+
+</script>
+
+</body>
+</html>
